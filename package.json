@@ -1,0 +1,31 @@
+{
+  "name": "trabajo-practico-integrador-3",
+  "version": "1.0.0",
+  "description": "API REST para gestion de usuarios, eventos y categorias - TPI 3",
+  "main": "app.js",
+  "type": "module",
+  "scripts": {
+    "dev": "node --watch app.js",
+    "start": "node app.js"
+  },
+  "keywords": [
+    "express",
+    "mongoose",
+    "mongodb",
+    "jwt",
+    "rest-api"
+  ],
+  "author": "Cristian Fabian Acevedo",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^5.1.1",
+    "bcryptjs": "^2.4.3",
+    "cookie-parser": "^1.4.7",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "express-validator": "^7.2.1",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^8.9.5"
+  }
+}
