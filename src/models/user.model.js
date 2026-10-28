@@ -92,13 +92,12 @@ const userSchema = new Schema(
 );
 
 // Middleware de consulta: Ignorar usuarios con deletedAt distinto de null en consultas normales
-userSchema.pre(/^find/, function (next) {
+userSchema.pre(/^find/, function () {
   // Permite consultar explícitamente usuarios eliminados si se indica includeDeleted: true
   const filter = this.getFilter();
   if (!filter.includeDeleted && filter.deletedAt === undefined) {
     this.where({ deletedAt: null });
   }
-  next();
 });
 
 // Virtual populate: eventos organizados por este usuario

@@ -6,7 +6,9 @@
   "type": "module",
   "scripts": {
     "dev": "node --watch app.js",
-    "start": "node app.js"
+    "start": "node app.js",
+    "test": "node test-e2e.js",
+    "seed": "node seed.js"
   },
   "keywords": [
     "express",
